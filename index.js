@@ -1,4 +1,4 @@
-$("body").keydown(function(){
+document.addEventListener('keydown', function(){
   var randomNumber1=Math.floor(Math.random()*6)+1;
   var source1="images/dice"+ randomNumber1 +".png";
   document.querySelector(".img1").setAttribute("src",source1);
@@ -13,4 +13,5 @@ $("body").keydown(function(){
   else
   document.querySelector("h1").textContent="Its a Draw!";
     $("h4").css("display","block");
-})
+});
+
